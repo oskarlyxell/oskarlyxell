@@ -11,6 +11,8 @@
 }
 body{
     font-family: "Roboto Condensed" sans-serif;
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 
@@ -26,6 +28,10 @@ nav{
 
 
 /******** MENU LINKS ********/
+
+.container ul {
+    margin: 0 auto;
+}
 
 nav a.nav-link {
   /*  font-weight: 500; */
@@ -73,7 +79,8 @@ nav ul li {
     
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 100vh;
+    
 }
 
 .main-info{
@@ -125,4 +132,141 @@ nav ul li {
     width: 100vh;
     z-index: 1;
 
-} 
+}
+
+/*_____________________ CONTACTS __________________*/
+
+.contacts {
+    color: var(--primary-orange);
+    border: 5px solid var(--primary-orange);
+}
+.mail{
+    color: var(--primary-orange);
+    
+}
+.links{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "face linked";
+    
+}
+
+
+  
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    grid-area: face;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    grid-area: linked;
+  }
+
+  .fa-gmail {
+    background: #007bb5;
+    color: white;
+  }
+
+  /*_____________________ ABOUTME __________________*/
+.profilepic{
+    border-radius: 100%;
+}
+
+.wrapIt{
+    width: 50%;
+    height: 65%;
+    border: 5px solid var(--primary-orange);
+    padding: 50px;
+    margin: 0 auto;
+    margin-top: 10vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.title{
+    align-items: center;
+    justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "text pic";
+  grid-area: title;
+}
+
+.title img { grid-area: pic; }
+.title h1 { grid-area: text; }
+.description 
+{ 
+    grid-area: descriprtion;
+    text-align: center;
+    height: 0vh;
+}
+
+.aboutme {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "TITLE"
+    "description";
+    color: var(--primary-orange);
+    
+    
+}
+
+/*_____________________ EXPERIENCE __________________*/
+
+.exp {
+    width: 500px;
+    border: 5px solid var(--primary-orange);
+    padding: 50px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.text {
+    text-align: center;
+}
+
+.experience{
+    color: var(--primary-orange);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.experience2{
+    color: var(--primary-orange);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
